@@ -28,7 +28,7 @@ Testing the model as provided by *amoudgl* on our test sequences, we observed va
 
 The GoTurn algorithm learns to track an object on a video sequences based on a bounding box that we give it first, in our train sequences the book sequences we can see that the algorithm performs poorly because it tracks the woman rather than the book itself.
 
-- Red: bounding box --> GoTurn
+- <font color="red">Red</font>: bounding box --> GoTurn
 - White: Groundtruth
 
 <p align="center">
