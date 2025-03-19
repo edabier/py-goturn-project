@@ -94,7 +94,7 @@ Doing this test we can see that there are some sequences where the bag moves fas
 
 One interesting results we got by skipping frames is that it gave us the ability to improve the occlusion problem since the objects is hidden less here the exemple on the rhino where we skip 4 frames:
 <p align="center">
-  <img src="data/rhino_skip4.gif" alt="Tracking Result GIF"/>
+  <img src="ressource/rhino_skip4.gif" alt="Tracking Result GIF"/>
 </p>
 
 #### - *Conclusion*
