@@ -35,7 +35,7 @@ White: Groundtruth
   <img src="data/book.gif" alt="Tracking Result GIF"/>
 </p>
 
-Since the goturn only relies on the frame at time t-1 another aspect the algorithm struggle with is occlusion as we can see in the rhino sequences the bounding box predicted are never able to recover the head of the rhino after it has been occluded by the tree
+Since the goturn only relies on the frame at time t-1 another aspect the algorithm struggle with is occlusion as we can see in the rhino sequences the bounding box predicted are never able to recover the head of the rhino after it has been occluded by the tree.
 
 <p align="center">
   <img src="data/rhino.gif" alt="Tracking Result GIF"/>
@@ -44,11 +44,7 @@ Since the goturn only relies on the frame at time t-1 another aspect the algorit
 ### Further exploration
 #### - *Occlusion tests*
 
-In the paper, it is explained that a limitation of this method is its difficulty to handle occlusions. This is due to how the algorithm is designed as it only relies on the previous image to find the object on the next one, and if the object gets occluded, it will only detect a part of it. We have observed it on the rhino sequence:
-
-<p align="center">
-  <img src="data/occluded_rhino.jpg" width="45%" />
-</p>
+In the paper, it is explained that a limitation of this method is its difficulty to handle occlusions. This is due to how the algorithm is designed as it only relies on the previous image to find the object on the next one, and if the object gets occluded, it will only detect a part of it. We have observed it on the rhino sequence above:
 
 As we can see, only the back of the rhino is recognized, which is expected as it is the part of the rhino that could be seen on the previous image.
 
