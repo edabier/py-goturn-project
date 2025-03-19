@@ -110,6 +110,8 @@ One interesting results we got by skipping frames is that it gave us the ability
 
 As a conclusion, these experiments have allowed us to visualize the impact of occlusion and changes in lighting conditions on the prediction, as well as the limitations of the assumption of small movements. As expected and described by the paper, these factors do reduce the quality of the prediction.
 
+We could improve the performance of go turn by retraining the model to perform better on our object training sets, as well as changing the architecture to allow it to take multi-frame and not only t-1 in order to improve occlusions problems.
+
 | Sequence 1 | mean IoU | Sequence 2 | mean IoU |
 | -------|--------| -------|--------|
 | bear (unprocessed)  | 0.84 | book (unprocessed)  | 0.44 |
