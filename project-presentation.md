@@ -90,7 +90,16 @@ The GOTURN paper is based on the assumption that the object movements are small 
   <img src="ressource/bag_seq_t_10.png" />
 </p>
 
-Doing this test we can see that there are some sequences where the bag moves faster and our performances drops drastically as the Goturn completely loses the object to track.
+Doing this test we can see that there are some sequences where the bag moves faster and our performances drops drastically as the Goturn completely loses the object to track. 
+
+| Skip Value | Bag Sequences Average IoU | Rhino Average IoU |
+|------------|--------------------------|-------------------|
+| No Skip    | 0.8361                   | 0.6588            |
+| Skip 2     | 0.7662                   | 0.7194            |
+| Skip 3     | 0.7137                   | 0.7405            |
+| Skip 4     | -                        | 0.7989            |
+| Skip 5     | 0.6424                   | 0.7705            |
+| Skip 10    | 0.5249                   | -                 |
 
 One interesting results we got by skipping frames is that it gave us the ability to improve the occlusion problem since the objects is hidden less here the exemple on the rhino where we skip 4 frames:
 <p align="center">
