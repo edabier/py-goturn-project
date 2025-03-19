@@ -26,12 +26,20 @@ Doing so, we could compare the predicted bounding boxes' centroid with the groun
 
 Testing the model as provided by *amoudgl* on our test sequences, we observed various situations where the model worked correctly, and some where it struggled due to several difficulties in the input video:
 
-The GoTurn algorithm learns to track an object on a video sequences based on a bounding box that we give it first, in our train sequences the book sequences we can see that the algorithm performs poorly because it tracks the woman rather than the book itself
+The GoTurn algorithm learns to track an object on a video sequences based on a bounding box that we give it first, in our train sequences the book sequences we can see that the algorithm performs poorly because it tracks the woman rather than the book itself.
+
+Red: bounding box --> GoTurn
+White: Groundtruth
 
 <p align="center">
   <img src="data/book.gif" alt="Tracking Result GIF"/>
 </p>
 
+Since the goturn only relies on the frame at time t-1 another aspect the algorithm struggle with is occlusion as we can see in the rhino sequences the bounding box predicted are never able to recover the head of the rhino after it has been occluded by the tree
+
+<p align="center">
+  <img src="data/rhino.gif" alt="Tracking Result GIF"/>
+</p>
 
 ### Further exploration
 #### - *Occlusion tests*
