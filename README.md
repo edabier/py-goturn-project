@@ -93,3 +93,9 @@ The GOTURN paper is based on the assumption that the object movements are small 
 #### - *Conclusion*
 
 As a conclusion, these experiments have allowed us to visualize the impact of occlusion and changes in lighting conditions on the prediction, as well as the limitations of the assumption of small movements. As expected and described by the paper, these factors do reduce the quality of the prediction.
+
+| Sequence 1 | mean IoU | Sequence 2 | mean IoU |
+| -------|--------| -------|--------|
+| bear (unprocessed)  | 0.84 | book (unprocessed)  | 0.44 |
+| bear (occluded)  | 0.76 | book (occluded)  | 0.36 |
+| bear (contrast change)  | 0.77 | book (contrast change)  | 0.23 |
