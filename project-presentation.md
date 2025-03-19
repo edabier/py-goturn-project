@@ -92,6 +92,11 @@ The GOTURN paper is based on the assumption that the object movements are small 
 
 Doing this test we can see that there are some sequences where the bag moves faster and our performances drops drastically as the Goturn completely loses the object to track.
 
+One interesting results we got by skipping frames is that it gave us the ability to improve the occlusion problem since the objects is hidden less here the exemple on the rhino where we skip 4 frames:
+<p align="center">
+  <img src="data/rhino_skip4.gif" alt="Tracking Result GIF"/>
+</p>
+
 #### - *Conclusion*
 
 As a conclusion, these experiments have allowed us to visualize the impact of occlusion and changes in lighting conditions on the prediction, as well as the limitations of the assumption of small movements. As expected and described by the paper, these factors do reduce the quality of the prediction.
