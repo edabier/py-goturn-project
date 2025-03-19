@@ -8,7 +8,7 @@ The goal of the basic GOTURN algorithm is to track an object on a video sequence
 
 ### Project pick up
 
-We started by downloading the pre-trained GOTURN model from the [pygoturn](https://github.com/amoudgl/pygoturn) repository.
+We started by downloading the pre-trained GOTURN model from the [pygoturn](https://github.com/amoudgl/pygoturn) repository. This code is necessary to be able to use the GOTURN model in our `project_test.ipynb` file, that computes the accuracy of the prediction (in terms of the predicted bounding boxes' centroids to the ground truth centroids)
 
 We had to format the provided test data to fit the expected input of the GOTURN algorithm (`OTB format` = a folder for each sequence with a subfolder containing the actual images composing the video, as well as a `groundtruth_rect.txt` file containing the top left coordinate of the boudning box, as well as the width and height of the box). 
 
