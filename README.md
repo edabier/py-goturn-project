@@ -31,3 +31,5 @@ Once this is done, you should be able to run our code properly, which is contain
 All the code from the beginning, up to the **GOTURN method** section was provided at the beginning of the project as baseline tools to evaluate our method.
 
 Then, inside the **GOTURN method** section, running the `main` method will run the object tracking algorithm on the image sequence defined by `seq` with the parameter `processed` set to True to apply it on processed images, and False otherwise.
+
+Inside this main method is defined the path the pretrained model's wieghts, it has to be changed if it doesn't match your folder's organization.
