@@ -18,7 +18,9 @@ Then we could test the pre-trained model out of the box as it is done in the `pr
 
 Doing so, we could compare the predicted bounding boxes' centroid with the ground truth for the different sequences. We obtain graphs like this: 
 
-![](data/Goturn-first-test.png)
+<p align="center">
+  <img src="data/Goturn-first-test.png" width="45%" />
+</p>
 
 ### First observations
 
@@ -29,17 +31,23 @@ Doing so, we could compare the predicted bounding boxes' centroid with the groun
 
 In the paper, it is explained that a limitation of this method is its difficulty to handle occlusions. This is due to how the algorithm is designed as it only relies on the previous image to find the object on the next one, and if the object gets occluded, it will only detect a part of it. We have observed it on the rhino sequence:
 
-![](data/occluded_rhino.jpg)
+<p align="center">
+  <img src="data/occluded_rhino.jpg" width="45%" />
+</p>
 
 As we can see, only the back of the rhino is recognized, which is expected as it is the part of the rhino that could be seen on the previous image.
 
 To further explore this occlusion problem, we created altered versions of the images by adding crossing lines on top of them to see how the model would handle such occlusion:
 
-![](data/lines_bag.bmp)
+<p align="center">
+  <img src="data/lines_bag.bmp" width="45%" />
+</p>
 
 As expected, the model struggles to keep track of the object when it goes behind the lines:
 
-![](/dataartificial_occlusion_bag.jpg)
+<p align="center">
+  <img src="data/artificial_occlusion_bag" width="45%" />
+</p>
 
 #### - *Contrast change test* 
 
@@ -52,11 +60,16 @@ The paper also mentions difficulties with changes in contrast and brightness. To
 
 Overall, this seems to make a little difference. Applying a random contrast change to the images (between 0.2 and 1.8), we obtain the following results on the bear sequence (average `IoU` score: 0.77):
 
-![](data/contrast-bear-sequence.png)
+<p align="center">
+  <img src="data/contrast-bear-sequence.png" width="45%" />
+</p>
 
 Compared to running the model with no change in the brightness (average `IoU` score: 0.84):
 
-![](data/bear-sequence.png)
+<p align="center">
+  <img src="data/bear-sequence.png" width="45%" />
+</p>
+
 
 #### - Large movement tests
 
