@@ -32,7 +32,6 @@ The GoTurn algorithm learns to track an object on a video sequences based on a b
   <img src="data/book.gif" alt="Tracking Result GIF"/>
 </p>
 
-![Tracking Result](data/book.gif)
 
 ### Further exploration
 #### - *Occlusion tests*
