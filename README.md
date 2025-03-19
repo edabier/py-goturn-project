@@ -16,7 +16,7 @@ This was done using the `add-bounding-box.ipynb` notebook
 
 Then we could test the pre-trained model out of the box as it is done in the `project-test.ipynb` file, in the section **GOTURN method**
 
-Doing so, we could compare the predicted bounding boxes' centroid with the ground truth for the different sequences. We obtain graphs like this: 
+Doing so, we could compare the predicted bounding boxes' centroid with the ground truth for the different sequences. We obtain graphs like this (here for the bag sequence): 
 
 <p align="center">
   <img src="data/Goturn-first-test.png"/>
@@ -28,8 +28,8 @@ Testing the model as provided by *amoudgl* on our test sequences, we observed va
 
 The GoTurn algorithm learns to track an object on a video sequences based on a bounding box that we give it first, in our train sequences the book sequences we can see that the algorithm performs poorly because it tracks the woman rather than the book itself.
 
-- Red: bounding box --> GoTurn
-- White: Groundtruth
+- ==Red==: bounding box --> GoTurn
+- ==White==: Groundtruth
 
 <p align="center">
   <img src="data/book.gif" alt="Tracking Result GIF"/>
