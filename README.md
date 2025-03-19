@@ -26,7 +26,13 @@ Doing so, we could compare the predicted bounding boxes' centroid with the groun
 
 Testing the model as provided by *amoudgl* on our test sequences, we observed various situations where the model worked correctly, and some where it struggled due to several difficulties in the input video:
 
+The GoTurn algorithm learns to track an object on a video sequences based on a bounding box that we give it first, in our train sequences the book sequences we can see that the algorithm performs poorly because it tracks the woman rather than the book itself
 
+<p align="center">
+  <img src="data/book.gif" alt="Tracking Result GIF"/>
+</p>
+
+![Tracking Result](data/book.gif)
 
 ### Further exploration
 #### - *Occlusion tests*
