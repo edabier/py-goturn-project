@@ -84,7 +84,8 @@ Compared to running the model with no change in the brightness (average `IoU` sc
 
 #### - Large movement tests
 
-The GOTURN paper is based on the assumption that the object movements are small enough to lie within a restricted area on the next frame. To see how this assumption could lead to tracking issues, we tried feeding the network not two consecutive images but ones separeted by varying number of images (up to a 10 images gap). Doing this, we make the tracking object move artificialy fast because we skip many positions.
+The GOTURN paper is based on the assumption that the object movements are small enough to lie within a restricted area on the next frame. To see how this assumption could lead to tracking issues, we tried feeding the network not two consecutive images but ones separated by varying number of images (up to a 10 images gap). Doing this, we make the tracking object move artificialy fast because we skip many positions.
+
 
 #### - *Conclusion*
 
