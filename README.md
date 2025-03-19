@@ -87,7 +87,7 @@ Compared to running the model with no change in the brightness (average `IoU` sc
 The GOTURN paper is based on the assumption that the object movements are small enough to lie within a restricted area on the next frame. To see how this assumption could lead to tracking issues, we tried feeding the network not two consecutive images but ones separated by varying number of images (up to a 10 images gap). Doing this, we make the tracking object move artificialy fast because we skip many positions.
 
 <p align="center">
-  <img src="data/bag_seg t+10.png" />
+  <img src="data/bag_seq_t_10.png" />
 </p>
 
 #### - *Conclusion*
