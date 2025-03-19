@@ -26,4 +26,8 @@ tensorboardX==1.6
 
 You should also download the weights of the pretrained GOTURN model at this [link](https://drive.google.com/file/d/1szpx3J-hfSrBEi_bze3d0PjSfQwNij7X/view?usp=sharing) and place it in the folder containing the code of the cloned repository.
 
-Once this is done, you should be able to run our code properly.
+Once this is done, you should be able to run our code properly, which is contained in the `Project_test.ipynb` file.
+
+All the code from the beginning, up to the **GOTURN method** section was provided at the beginning of the project as baseline tools to evaluate our method.
+
+Then, inside the **GOTURN method** section, running the `main` method will run the object tracking algorithm on the image sequence defined by `seq` with the parameter `processed` set to True to apply it on processed images, and False otherwise.
