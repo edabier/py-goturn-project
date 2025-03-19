@@ -90,6 +90,8 @@ The GOTURN paper is based on the assumption that the object movements are small 
   <img src="data/bag_seq_t_10.png" />
 </p>
 
+Doing this test we can see that there are some sequences where the bag moves faster and our performances drops drastically as the Goturn completely loses the object to track.
+
 #### - *Conclusion*
 
 As a conclusion, these experiments have allowed us to visualize the impact of occlusion and changes in lighting conditions on the prediction, as well as the limitations of the assumption of small movements. As expected and described by the paper, these factors do reduce the quality of the prediction.
