@@ -61,13 +61,13 @@ The paper also mentions difficulties with changes in contrast and brightness. To
 Overall, this seems to make a little difference. Applying a random contrast change to the images (between 0.2 and 1.8), we obtain the following results on the bear sequence (average `IoU` score: 0.77):
 
 <p align="center">
-  <img src="data/contrast-bear-sequence.png" width="65%" />
+  <img src="data/contrast-bear-sequence.png" />
 </p>
 
 Compared to running the model with no change in the brightness (average `IoU` score: 0.84):
 
 <p align="center">
-  <img src="data/bear-sequence.png" width="65%" />
+  <img src="data/bear-sequence.png" />
 </p>
 
 
