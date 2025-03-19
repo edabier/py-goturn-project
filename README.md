@@ -19,10 +19,12 @@ Then we could test the pre-trained model out of the box as it is done in the `pr
 Doing so, we could compare the predicted bounding boxes' centroid with the ground truth for the different sequences. We obtain graphs like this: 
 
 <p align="center">
-  <img src="data/Goturn-first-test.png" width="45%" />
+  <img src="data/Goturn-first-test.png"/>
 </p>
 
 ### First observations
+
+Testing the model as provided by *amoudgl* on our test sequences, we observed various situations where the model worked correctly, and some where it struggled due to several difficulties in the input video:
 
 
 
