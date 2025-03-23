@@ -26,6 +26,8 @@ tensorboardX==1.6
 
 You should also download the weights of the pretrained GOTURN model at this [link](https://drive.google.com/file/d/1szpx3J-hfSrBEi_bze3d0PjSfQwNij7X/view?usp=sharing) and place it in the folder containing the code of the cloned repository.
 
+The file `test.py` is a modified version of the same file in the original repository. We have added a parameter to be able to conveniently load processed or not processed images to be able to run our tests. This file should be replaced by ours in the pygoturn folder in `pygoturn/src/` in order to work correctly
+
 Once this is done, you should be able to run our code properly, which is contained in the `Project_test.ipynb` file.
 
 All the code from the beginning, up to the **GOTURN method** section was provided at the beginning of the project as baseline tools to evaluate our method.
